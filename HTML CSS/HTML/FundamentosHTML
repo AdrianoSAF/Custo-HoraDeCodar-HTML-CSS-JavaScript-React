@@ -1,0 +1,84 @@
+A ANATOMIA DAS TAGS
+    * O elemento principal é a TAG;
+    *Toda TAG tem um nome e um propósito. Ex: p que serve para paragraf;
+    *Ela é envolta em < e >. Ex: <p> </p>;
+    *No meio coloca o conteúdo <p>CONTEUDO DA TEG</p>;
+    *QUASE TODAS TEM QUE ABRIR E FECHAR.
+
+ESTRUTURA DO HTML
+    *Todos tem uma estrutura base, ou seja criar algumas TAGS;
+    *DOCTYPE: esta TAG declara a versão do HTML;
+    *HTML: esta TAG envolve todo o HTML;
+    *HEAD: coloca todas as configurações de um site: Ex: importação CSS e o titulo da Página(Meta TAGS);
+    *BODY: É onde todos os elementos visiveis estão.
+
+TITULOS
+    *São conhecidos como headings;
+    *Separa seções;
+    *nome h*, onde * pode ser um valor de 1 a 6;
+    *O maior é 1. É importante colocar um por página
+    *deve está conectada com o propósito da página;
+
+PARÁGRAFOS
+    *Insere textos maiores;
+    *Cada parágrafo começa uma nova linha.
+        Esse comportamento acontece com toda TAG de bloco;
+    *Titulo faz parte desse grupo
+
+TAGS SEM CONTEÚDOS
+    *<br> pula linha
+    *<hr> coloca uma linha
+
+COMENTÁRIOS
+    *qUALQUER UM PODE VER QUANDO INSPECIONAR A PÁGINA
+
+ATRIBUTOS
+    *adiciona funcionalidades as TAGS
+    *tag <a href=""></a>(anchor)  é responsável por nos direcionar a uma nova página
+    *o atributo href é responsável por esse direcionamento para nova página
+
+ABRIR NOVA ABA
+    *Atributo targt com o valor _blank
+
+IMAGEM
+    *TAG <img src="">
+    *SRC: ATRIBUTO  PEGA O CAMINHO RELATIVO 
+    * PADRÃO COLOCAR A IMAGEM EM UMA PASTA CHAMADA "IMG" OU ASSETS
+
+LISTAS NÃO ORDENADAS
+    *<ul></ul>: LISTAS
+    *<li></li>: item da LISTAS
+
+LISTAS ORDENADAS
+    <ol></ol>: 
+
+TABELAS
+    *quase um excel
+    *não é tão utilizadas
+    *<table></table> cria a tabela, um cabeçalho e um corpo
+    *<tr></tr> cria a linha : table row
+    *os dados ficam em <td></td>: table data
+    *<th></th> cabeçalho
+
+tag DIV
+    *cRIA UMA DIVISÃO, CESSÃO
+    *PODE CRIAR ELEMENTOS MENORES, CARDS
+    *PROPÓSITO ENCAPSULAR ELEMENTOS RELACIONADOS ENTRE SI
+    
+                        TAGS
+    *   <b></b> - Negrito
+    *   <strong></strong> - Negrito (enfáse)
+    *   <i></i> - Italico
+    *   <hr> - Linha de divisão;
+    *   <br> - Pular linha (quebra linha)
+    *   small></small> - Texto pequeno
+    *   <del></del> - Riscado (deletado)
+    *   <sup></sup> - Superior
+    *   <sub></sub> - Inferior
+    *   <mark></mark> - Marcação (destaca texto)
+    *   <u></u> - sublinhado
+    *   <blockquote cite="HTTP://fonte da referencia"></blockquote> - Tag de sitação. 
+    *   <q></q> - Uma Tag quote para techos menores
+    *   <figcapition></figcapition> - Tag de texto abaixo da imagem
+    *   <abbr title="Ele coloca uma esplicação do texto que estiver dentro dele">Texto</abbr>
+    *   <address>Para endereço</address>

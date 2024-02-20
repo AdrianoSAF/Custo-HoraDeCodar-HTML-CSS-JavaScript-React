@@ -1,0 +1,82 @@
+O que é um formulário?
+    *Recebe dados e valida
+    *Tags mais utilizadas: forms, label e input;
+    *Tag forms: Cria o formulário e o delimita;
+    *Tag Label: Descreve os inputs;
+    *Tag input: inserimos dados, ele tem vários tipos. 
+        -number, email, text e etx. 
+        -Esses tipos são definidos no atributo type.
+
+Atributos da tag form
+    *Action: o arquivo/página que os arquivos serão enviados;
+    *method: GET ou POST: recebe ou envia dados;
+    
+Atributo name
+    *É utilizados para configurar nossos inputs;
+    *O valor é ligado ao propósito do input. Ex: input de idade tem o atributo name como age ou idade
+    *Esse atributo é utilizado no back-end para pegar o valor do campo.
+
+Atributo label
+    *for: Utilizado para lincar com o input;
+    *O valor deve ser o mesmo que o atributo name que corresponde aquele label;
+    *Utilize o for para propósito semântico, isso ajuda o site a melhorar no rankeador do google.
+
+Enviando dados de formulário
+    *É enviado atravez de um botão chamado submit;
+    *Esse botão também é um input, com o type de valor submit;
+    *Os dados serão enviados ao servidor através de uma requisição HTTP;
+
+Elemento select
+    *Select: temas opções representadas por tags de opton;
+    *A tag Select também tem um atributo name.
+
+Atributo selected
+    *Podemos ter uma opção pre selecionada;
+    *para isso é utilizado o atributo selected.
+    *Ele é acrescentado dentro de uma das opções;
+    *não tem valor. Ex <section><option value="sim" selected></option></section>
+
+Múltiplas seleções
+    *quando queremos selecionar mais de uma opção no elemento.
+    *Ex: 
+        <select name="items" multiple>
+        <option value="pera">Pera</option>
+        <option value="feijao">Feijão</option>
+        <option value="arroz">Arroz</option>
+        <option value="milho">Milho</option>
+    </select>
+
+Elemento de textarea
+    *Utilizado para textos maiores;
+    *ele tem os atributos cols="30" rows="10" que estiliza , mas é melhor fazer isso no css
+
+Fieldset e legend
+
+    *fieldset: é uma tag para agrupar inputs;
+    *legend: é como um label que descreve os inputs grupados;
+    *São utilizadas para conectar 2 ou mais inputs que tenha o mesmo sentido;
+    *ex: nome e sobrenome
+    *não é tão comum.
+
+Datalist
+    *É como um select , porém com um autocomplete;
+    *as opções são linkadas por um atributo chamado list.
+
+input para senha
+    *Basta modificar o atributo type de "text" para "password".
+
+Reinicial o form
+    *da para resetar todos os campos com um input de type "reset"
+    *Ex: <input type="reset" value="Limpar">
+
+input radio
+    *É utilizado para selecionar apenas uma opção de várias possibilidades.
+    *Utilizo ela ao invez do select quando percisar postar a opção.
+    *exibição e diferente
+
+input checkbox
+    *Similar ao Radio. 
+    *Da para selecionar 1 ou mais opções
+
+input de data
+    *mostra um calendário para selecionar a data

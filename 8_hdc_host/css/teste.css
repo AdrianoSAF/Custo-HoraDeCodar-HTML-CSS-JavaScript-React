@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+
+li{
+    list-style: none;
+}
+
+header{
+    background-color: #232a31;
+    height: 5rem;
+}
+
+nav{
+    display: flex;
+    /* margin: 0 3rem; */
+    width: 100%;
+    position: relative;
+}
+
+.logo{
+    width: 55px;
+    height: 55px;
+    margin: 13px 0 5px 3rem;
+    cursor: pointer;
+}
+
+.navbar-list{
+    display: flex;
+    list-style: none;
+    margin-right: 3rem;
+    position: absolute;
+    right: 0;
+}
+
+.navbar-list li{
+    height: 75px;
+    line-height: 75px;
+    margin-right: 1rem;
+}
+
+.navbar-btn{
+    padding: 15px 20px;
+    text-transform: uppercase;
+    background-color: #232a31;
+    color: #fff;
+    border: none;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.navbar-btn:hover{
+    opacity: 0.9;
+}
+
+.btn{
+    background-color: #22bb5f;
+}
+
+.main-banner{
+    background-image: url("../img/mainbanner.png");
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+}
+
+.main-banner h1,
+.main-banner p{
+    color: #fff;
+    text-align: center;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+.services-container ul{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.services-container li{
+    flex: 1 1 5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.fas{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.fa-shield-alt{
+    color: #2cc76a;
+}
+
+.fa-rocket{
+    color: #ef3f29;
+}
+
+.fa-comments{
+    color: #ef8f29;
+}
+
+.prices-container{
+    text-align: center;
+    padding: 0 0 2.8rem;    
+}
+
+.plans-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1.5rem auto;
+}
+
+.plans-container ul{
+    flex: 1;
+    max-width: 270px;
+    margin: 0 20px;
+}
+
+
+.plans-container li{
+    height: 50px;
+    line-height: 50px;   
+    background-color: #e8e9ea;
+    color: #000;
+}
+
+.plans-container .price{
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    background-color: #2cc762;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto -50px;
+    position: relative;
+}
+
+.plans-container .plan-name{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 50px 0;
+    color: #fff;
+    background-color: #202b34;
+    font-size: 20px;
+}
+
+
+
+
+.plans-container .plan-btn{
+    background-color: #2cc762;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.plans-container .plan-btn:hover{
+    opacity: 0.8;
+}
+
+.plans-container .recommended{
+    background-color: #a3423e;
+}
+
+.domain-container{
+    text-align: center;
+    background-color: #34454e;
+    padding: 5rem;
+}
+
+.searchdomain input{
+    display: block;
+    margin: 0.5rem auto;
+    border-radius: 5px;
+    height: 2rem;
+    width: 20rem;
+}
+
+.searchdomain .submit-btn{
+    height: 3rem;
+    width: 10rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #2cc762;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.searchdomain .submit-btn:hover{
+    opacity: 0.8;
+}
+
+.contact-container{
+    text-align: center;
+}
+
+.contact-container input, 
+textarea{
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 10px 20px;
+}
+
+.contact-container textarea{
+    display: block;
+    margin: 0 auto 20px;
+    width: 470px;
+    height: 150px;
+}
+
+.contact-container button{
+    width: 170px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2cc76a;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.contact-container button:hover{
+    opacity: 0.8;
+}
+
+footer{
+    text-align: center;
+    margin-top: 1rem;
+}

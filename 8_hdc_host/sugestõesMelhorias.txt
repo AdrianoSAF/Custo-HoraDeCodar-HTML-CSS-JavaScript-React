@@ -1,0 +1,3 @@
+*(OK)Fazer o site responsivo para outras telas menores;
+*Fazer outras páginas(sessões);
+*Fazer outra página com outro tema.git

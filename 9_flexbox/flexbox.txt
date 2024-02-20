@@ -1,0 +1,58 @@
+O que é flexbox
+    -Valor da propriedade display
+    -Maneira mais utilizada para acondicionar elementos em um container;
+    -Tem diversas regras dentro do flex;
+    -é considerado no elemento Pai e os Filhos serão movimentados;
+    -Elemento filho também pode ter regras específicas.
+
+Aplicando flex
+    -Precisa de uma estrutura base(um container com os elementos fihlos dentro );
+    -Colocando a regra display com o valor flex no container;
+    -O padrão é o mesmo que o inline mas da para mudar como column
+
+Flex direction
+    -Pode ser mudado o comportamento inline do flex(chama-se row)
+    -Alterando o flex-direction para column, teremos os itens como elementos de bloco;
+    -Row é o valor padrão do direction
+
+flex-wrap
+    -Por padrão o flex coloca todos os elementos na mesma linha;
+    -Com o flex-warp podems limitar quantos elementos queremos em 1 linha;
+    -As linhas iram respeitar a largura dos elementos.
+
+Posicionando conteúdo (justify-content)
+    -É possivel mudar como o conteúdo é posicionado no eixo horizontal;
+
+Posicionando conteúdo (align-items)
+    -É possível mudar o posicionamento do conteúdo na vertical
+
+Gap
+    -Coloca espaço entre elementos que estão no flex 
+    -Especifica a medida em px
+
+Order
+    -Muda a ordem dos elementos
+    -Utilizada nos elementos filho
+
+Grow
+    -Pode mudar a proporção de 1 ou mais elementos filhos
+    -A regra Width precisa está como automática
+    -preenche os espaços vazios (largura do container)
+
+Basis
+    -A regra configura a largura base do elemento
+    -pode trabalhar com as regras Grow e Basi juntas
+
+Shrink
+    -Oposto do grow.
+    -Usamos essa regra em conjunto com o Basis
+    -tem que definir a prioridade(Ex:  flex-shrink: 1, flex-shrink: 2 etc)
+
+Flex shorthand
+    -Uma abreviação do onde pode utilizar o grow, shrink e Basis
+    -coloca todos os valores
+        *Ex: flex: 2 1 100px(na mesma ordem, grow, shrink e basis)
+
+auto alinhamento
+    -align-self: alinha um elemento diferente dos demais
+    -podemos centralizar um elemento enquanto os outros seguem a regra do container

@@ -1,0 +1,238 @@
+MANEIRAS DE ADICIONAR O css;
+    *Inline: Estilo adicionado ao atributo style;
+    *Internal: quando CSS adicionado da TAG HEAD;
+    *External: CSS adicionado atravez de um arquivo; (separação de responsabilidades)
+
+A ANATOMIA DO CSS
+    *Aplicamos CSS a 1 elemento;
+    *seleciona o elemento;
+    *Coloca a propriedade e valores;
+    *Mudar cor: color: red;
+    *nome da propriedade, dois pontos, valor, ponto e virgula.
+
+INLINE
+    *ATRIBUTO DIRETAMENTE INSERIDO NO ELEMENTO
+    *aTRIBUTO STYLE NOS PERMITE ESCREVER REGRAS DE CSS
+    **EX: STYLE="COLOR: RED;"
+
+MÚLTIPLAS REGRAS
+    *Podemos adicionar várias regras ao CSS
+    *Separados por ;
+    *Com a união de estilos podemos dar design melhor ao elemento;
+
+INTERNAL CSS
+    *Melhor que o INLINE, é colocado os estilos na tag HEAD;
+    *As regras precisão estar entre a TAG STYLE;
+    *Ex: p{
+            color: red;
+        }
+
+EXTERNAL CSS
+    *Fica dentro de um arquivo .css;
+    *geralmente fica em uma pasta chamada CSS;
+    *importamos atravez da TAG link;
+
+ORDEM DO CSS
+    *ordem de prioridade: INLINE > INTERNAL = EXTERNAL 
+    *ESSA REGRA É APLICADA QUANDO TEMOS ESTILOS QUE CONFLITÃO NO MESMO ELEMENTO 
+
+MÚLTIPLOS ARQUIVOS DE CSS
+    *é possivel ter mais de uma folha de estilo no CSS;
+    *Basta importar elas no HEAD;
+    *arquivos importados por ultimo tem mais prioridade;
+
+CLASSES E IDS
+    *São atributos do HTML que estão relacionados com o CSS
+    *Podemos especificar elementos com ele;
+    *IDs: são utilizados para elementos únicos;
+    *CLASS: servem para um ou mais elementos
+
+CLASSES
+    *O valor do atributo é o nome da class
+    *O seletor fica: .<nome-da-classe>
+
+IDs
+    *ids são unicos em uma página
+    *O selector fica: #nome-do-id
+
+Ordem dos Seletores
+    *Id > Class > seletor tag
+    *regras que não entra em conflito são aplicadas normalmente
+
+Cores do CSS
+    *Divididas em frupos
+    * as cores por nome(red, green ...) não são muito utilizadas
+    *RGB: Bem utilizada
+    *Hexadecimal: mais utilizada
+    *HSL: Hue saturation lightness (não muito utilizadas)
+
+nOME DAS Cores
+    *é bom para fins didaticos;
+    *Limita o design com o nome das cores;
+    
+Hexadecimal
+    *Consiste 6 digitos, precedidos por #
+    *valores de 0 a 9 e de A a F;
+    *0 mais escuro F mais claro
+
+RGB
+    *red, green, blue
+    *Dencidade (0-255, 0-255, 0-255)
+
+RGBA
+    *A de alph
+    *muda a opacidade da cor
+    *valor de 0 a 1 para o A
+    *(0-255, 0-255, 0-255, 0-1)
+
+HSL
+    *Não é muito utilizada
+    * Ordem de utilização HEX > RGB > HSL > Nomes de cor
+    * hsl(0-255,, 0-100%, 0-100%)
+
+Background color
+    *Quase odo elemento tem
+    *A regra é: background-color: red
+    *regras de cor de fundo e cor de fonte podem ser utilizadas juntas;
+
+
+opacidade
+    *opacity
+    *vai de 0-1
+
+Backgroud images
+    *Imagem dentro do background
+    *A regra é: background-image: url("pasta/imagem.jpg")
+    *.. significa voltar a pasta
+
+Centralizando a imagem de background
+    *2 Regras: background-position com o valor do centro;
+    *OU background-size com o valor do cover
+
+Box Model
+    *Entidade criada em todo elemento HTML
+    *Consiste em 4 parte: Altura e Largura,Padding, Border e Margin
+
+Height and width
+    *São o core do box model (base)
+    *é o conteúdo do elemento
+    *os block elements já vem com 100% de largura
+    *Preenche a tela na horizontal
+
+Padding
+    *espaço entre o conteúdo e a borda do elemento
+    *O espaçamento interno ou respiro
+
+Padding Lados individuais
+        *top, right, bottom e left
+
+Shorthand properties
+    *Adicionar padding a todas as direções com apenas uma regra
+    *Ordem top > right > bottom > left
+
+Padding e width
+    *quando tem PADDING e WIDTH na mesma estrutura css,
+    *Para respeitar a largura do elemento é utilizado, 
+    *box-sizing isso faz o elemento respeitar o tamanho do width
+
+Border
+    *Fica entre padding e margin
+    *fim decorativo
+    *a regra é Tamanho > aspecto e cor Ex: 3px solid red
+
+Border de lados individuais
+    *top, right, bottom e left
+
+bordar arredondada
+    *Propriedade: border-radius
+    *Regra: border-radius: 5px
+    *pode arredondar elemento que não tem bordar
+
+Margin
+    *Responsável pelo espaçamento externo do elemento
+    *aplicavel igual o padding
+
+Elementos do box model juntos
+    *
+
+Alinhamento de texto
+    *Por padrão é alinhado a esquerda
+    *regra: text-align: centro ou direita
+
+TEXT DECORATION
+    *Pode adicionar efeitos ao texto
+    *Ou remover efeitos
+    *Regra: text-decoration: none
+
+Transformação de texto
+    *É possivel tranformar em uppercase ou lowercase
+    *(minusculo, maiusculo)
+    *nunca escrever o texto em capslock no html
+
+espaçamento de letras
+    *regra: letter-spacing: 5px
+
+FONTES
+    *regra: font-family
+    *regra disponivel: Serif, Sans-serif, Monospace, cursive e Fantasy;
+    *todos os navegadores tem fontes que podemos utilizar;
+    *podemos utilizar também fontes externas, por exemplo Google Fonts
+
+font-weight
+    *Deixa a fonte mais fina ou mais grossa
+    *Variação de valores: 100 a 900
+    *Tambem funciona com palavras, exemplo: bold(600)
+    *Nem todas as fontes tem as variações de valores
+
+font-size
+    *tamanho da fonte valor em px
+
+Display
+    *Muda o comportamento do elemento de bloco para inline
+    Ex: a tag div é em bloco e o span é inline
+    Da para mudar.
+    Bloco Ocupa a linha todas
+    Inline ocupa uma parte da linha
+
+Display 2º função
+    *Esconde elementos
+
+Sobre as posições dos elementos 
+    *Posibilidades: relative, fixed, absolute, sticky e mais;
+    *static é o valor padrão;
+    
+Position static
+    *valor padrão
+    *se colocar não muda nada
+
+Position relative
+    *regra: top, left, right e bottom movem o elemento
+    *ATENÇÃO: normalmente não utilizamos essas regras com o relative;
+    Pode acontecer de um elemento ficar a frente do outro
+
+position absolune
+    *O elemento pode se mover por toda a tela;
+    *Quebramos o fluxo do html,
+    Como se a altura e largura não contasse no html,
+
+    *A Regra é afetada por top, left, right e bottom;
+    *pode ser uma solução ou problema, depende do contexto.
+
+Relative com absolute
+    *Podemos resolvero problema do absolute com relative
+    *O elemento com posição absoluta é ligado 
+        ao elemento mais próximo de posição 
+        relativa, se não ele é ligado ao body;
+    *Com um container de posição relativa pode 
+        controlar a área de ação dos elementos 
+        de posição absoluta.
+
+Position fixed
+    *O elemento fica fixado na tela 
+        independente do scroll;
+    *utilizado para usar barra de navegação fixa
+
+Position sticky
+    *Também deixa o elemento fixo na tela;
+    *Mas tem outro comportamento, quando ele volta para posição original ele torna um relative.
+    *a posição do elemento é onde ele foi inserido no html

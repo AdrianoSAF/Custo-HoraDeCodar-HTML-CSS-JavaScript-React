@@ -1,0 +1,133 @@
+*{ /*Resetar todos os atributos padrão do css  ou acrescentar */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif; /* Set as fontes padrões*/
+}
+
+body{
+    background-color: #f0f0f0;
+    
+}
+
+/* Padronizar a cor de todos os titulos */
+h1, h2, h3, h4, h5{
+    color: #333;
+}
+
+p,
+label{
+    color: #444;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+/* Especificando os tipos de input que será padronizado */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+textarea{
+    width: 400px;
+}
+
+textarea{
+    padding: 10px 5px;
+}
+
+/* Page header */
+
+.header{
+    height: 160px;
+    padding: 20px;
+    background-color: #673ab7;
+}
+
+.header h3{
+    color: #fff;
+    margin-top: 0;
+}
+
+.form-container{
+    background-color: #fdfdfd;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;/* para ele ser a referencia de posição para qualquer elemento dentro dele que seja absoluto */
+    top: -67px; /* para o container ficar um pouco em cima do outro */
+    
+}
+
+/* form Header */
+
+.form-header p {
+    color: #673ab7;
+    border-bottom: 2px solid #673ab7;
+    width: 100px;
+    text-align: center; /* Colocar o texto no centro */
+    margin: 0 auto; /* Colocar o elemento no centro */
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px; /* Preenche em volta do texto. faz com que a linha fique na bordar. Qualquer coisa testa */
+}
+
+.form-body{
+    padding: 30px;
+    
+
+}
+
+.form-title{
+    margin-bottom: 15px;
+}
+
+.form-body p{
+    margin-bottom: 20px;
+}
+
+.required-field{
+    color: #d80835;
+}
+
+.box-input{
+    margin-bottom: 35px;
+}
+
+.block{
+    display: block;
+}
+
+.optional-box{
+    display: inline-block;
+    margin: 0 30px 30px 0;
+}
+
+.opcional-list li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.box-input p{
+    margin-bottom: 5px;
+}
+
+.btn-submit{
+    background-color: #673ab7;
+    color: #FFF;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    width: 100px;
+    height: 50px;
+    cursor: pointer; /* Mudar o cursor quando passar pelo elemento */
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn-submit:hover{
+    background-color: #FFF;
+    border-color: #673ab7;
+    color: #673ab7;
+    
+}
